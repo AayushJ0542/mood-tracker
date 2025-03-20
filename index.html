@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Daily Mood Tracker</title>
+</head>
+<body>
+    <header>
+        <h1>Daily Mood Tracker</h1>
+    </header>
+    <div class="container">
+        <div class="card">
+            <div class="moodselector">
+                <h2>How do you feel?</h2>
+                <div class="inputEmoji">
+                    <div class="inputDate">
+                        <p class="date">Select Date:</p>
+                        <input type="date" name="date" id="Mooddate">
+                    </div>
+                    <div class="emojis" id="emojis"></div>
+                    </div>
+                </div>
+            </div>
+        <div class="card">
+            <div class="history">
+                <h2>History</h2>
+                <div class="dateRange">
+                    <button class="day activebtn">Daily View</button>
+                    <button class="weekly">Weekly View</button>
+                    <button class="monthly">Monthly View</button>
+                </div>
+                <div class="displayDay">
+                    <div class="displayDailyEmoji" id="dayDisplay"></div>
+                    <div class="dailyDisplayDate" id="dayDateDisplay"></div>
+                    <div class="dailyDisplayText" id="dayTextDisplay"></div>
+                </div>
+                <div class="displayweek"></div>
+                <div class="displaymonth"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
